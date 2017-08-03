@@ -73,9 +73,9 @@
 
 [Hencoder http://hencoder.com/](http://hencoder.com/)
 
-* [自定义View1-1绘制基础](自定义View1-1绘制基础.md)
-* [自定义View1-2Paint详解](自定义View1-2Paint详解.md)
-* [自定义View1-3文字的绘制](自定义View1-3文字的绘制.md)
+* [自定义View1-1绘制基础](hencoder/自定义View1-1绘制基础.md)
+* [自定义View1-2Paint详解](hencoder/自定义View1-2Paint详解.md)
+* [自定义View1-3文字的绘制](hencoder/自定义View1-3文字的绘制.md)
 
 # 5 源码
 
