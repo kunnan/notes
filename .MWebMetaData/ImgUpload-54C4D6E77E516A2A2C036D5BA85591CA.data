@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>4643A38C8717321A1452526D91D01074</key>
+	<array>
+		<dict>
+			<key>localURL</key>
+			<string>/img/mangnitude%E5%8E%9F%E7%90%86.png</string>
+			<key>remoteURL</key>
+			<string>http://7xs7a3.com1.z0.glb.clouddn.com/mangnitude原理.png</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>/img/%E7%A6%BB%E6%95%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%B9%85%E5%BA%A6.png</string>
+			<key>remoteURL</key>
+			<string>http://7xs7a3.com1.z0.glb.clouddn.com/离散傅里叶幅度.png</string>
+		</dict>
+	</array>
+	<key>selectedItem</key>
+	<string>4643A38C8717321A1452526D91D01074</string>
+</dict>
+</plist>

@@ -73,7 +73,9 @@ void magnitude(InputArray x, InputArray y, OutputArray magnitude)
 * y：表示矢量的浮点型 Y 坐标值，也就是虚部
 * magnitude：输出的幅值，它和第一个参数 x 有着同样的尺寸和类型。
 
-magnitude 函数的原理为：$dst(I) = {\sqrt{x(I)^2 + y(I)^2}}$
+magnitude 函数的原理为：
+
+![mangnitude原理](http://7xs7a3.com1.z0.glb.clouddn.com/mangnitude原理.png)
 
 ## log()
 
@@ -107,7 +109,10 @@ void normalize( InputArray src, InputOutputArray dst, double alpha = 1, double b
 *   第二步：将图像扩大到合适的尺寸
 *   第三步：为傅里叶变换的结果（实部和虚部）分配存储空间
 *   第四步：进行离散傅里叶变换
-*   第五步：将复数转换为幅值，复数包含实数部分（Re）和虚数部分（Im）。离散傅里叶变换的结果是复数，对应的幅度可以表示为$M = {\sqrt{Re(DFT(I))^2 + Im(DFT(I))^2}}$
+*   第五步：将复数转换为幅值，复数包含实数部分（Re）和虚数部分（Im）。离散傅里叶变换的结果是复数，对应的幅度可以表示为
+
+    ![离散傅里叶幅度](http://7xs7a3.com1.z0.glb.clouddn.com/离散傅里叶幅度.png)
+
 
 *   第六步：进行对数尺度缩放
 *   第七步：剪切和重分布幅度图象限
