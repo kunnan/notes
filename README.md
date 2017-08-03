@@ -1,11 +1,9 @@
-# notes
+# 学习笔记
 
-学习笔记
-
-* [Android目录](go/android.md)
-* [Java目录](go/java.md)
-* [Python目录](go/python.md)
-* [OpenCV目录](go/opencv.md)
-* [Go目录](go/go.md)
+* [Android学习](android/android.md)
+* [Java语言](java/java.md)
+* [Python语言](python/python.md)
+* [OpenCV学习](opencv/opencv.md)
+* [Go语言](go/go.md)
 * [计算机基础](theory/theory.md)
 
