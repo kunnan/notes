@@ -4,8 +4,8 @@
 
 # 1 基础
 
-* [Python基础①基本数据类](基础/Python基础①基本数据类.md)
-* [Python基础②字符串列表元](基础/Python基础②字符串列表元.md)
+* [Python基础①基本数据类型](基础/Python基础①基本数据类型.md)
+* [Python基础②字符串列表元组](基础/Python基础②字符串列表元组.md)
 * [Python基础③字典](基础/Python基础③字典.md)
 * [Python基础④集合](基础/Python基础④集合.md)
 * [Python基础⑤语句](基础/Python基础⑤语句.md)
