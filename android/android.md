@@ -69,7 +69,15 @@
 * [Android样式4drawable](进阶/Android样式4drawable.md)
 * [Android样式5Style](进阶/Android样式5Style.md)
 
-# 4 源码
+# 4 扔物线Hencoder
+
+[Hencoder http://hencoder.com/](http://hencoder.com/)
+
+* [自定义View1-1绘制基础](自定义View1-1绘制基础.md)
+* [自定义View1-2Paint详解](自定义View1-2Paint详解.md)
+* [自定义View1-3文字的绘制](自定义View1-3文字的绘制.md)
+
+# 5 源码
 
 ## 开源库
 
