@@ -4,7 +4,7 @@
 
 # 1 实践
 
-## 1.1 UI
+## UI
 
 * [Android5.x之CardView](实践/Android5.x之CardView.md)
 * [Android5.x之Notification](实践/Android5.x之Notification.md)
@@ -17,13 +17,13 @@
 * [Widget使用详解](实践/Widget使用详解.md)
 * [Android动画之Interpolator](实践/Android动画之Interpolator.md)
 
-## 1.2 工具
+## 工具
 
 * [Bitmap显示](实践/Bitmap显示.md)
 * [DiffUtil在RecyclerView中的使用](实践/DiffUtil在RecyclerView中的使用.md)
 * [LoaderManager使用详解](实践/LoaderManager使用详解.md)
 
-## 1.3 开源库
+## 开源库
 
 * [EventBus使用详解](实践/EventBus使用详解.md)
 * [Okhttp使用详解](实践/Okhttp使用详解.md)
@@ -77,16 +77,21 @@
 * [自定义View1-2Paint详解](hencoder/自定义View1-2Paint详解.md)
 * [自定义View1-3文字的绘制](hencoder/自定义View1-3文字的绘制.md)
 
-# 5 源码
+# 5 Gradle
+
+* [Gradle从入门到实战①Groovy基础](gradle/Gradle从入门到实战①Groovy基础.md)
+
+
+# 6 源码
 
 ## 开源库
 
 * [Otto源码解析](源码/Otto源码解析.md)
 * [EventBus3.0源码解析](源码/EventBus3.0源码解析.md)
 
-# 6 framework
+# 7 framework
 
-# 7 代码示例
+# 8 代码示例
 
 * [https://github.com/liuguoquan727/android-study](https://github.com/liuguoquan727/android-study)
 
