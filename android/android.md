@@ -47,19 +47,10 @@
 
 # 3 进阶
 
-* [Android Context详解](进阶/Android-Context详解.md)
-
-## Android开发艺术探索
+## UI
 
 * [View的工作流程](进阶/View的工作流程.md)
 * [View的事件分发机制](进阶/View的事件分发机制.md)
-* [Android的IPC机制](进阶/Android的IPC机制.md)
-* [Android的IPC方式](进阶/Android的IPC方式.md)
-* [Android的消息机制](进阶/Android的消息机制.md)
-* [Android的线程和线程池](进阶/Android的线程和线程池.md)
-
-## Android群英传 
-
 * [Activity与Activity调用栈分析](进阶/Activity与Activity调用栈分析.md)
 * [Android控件架构](进阶/Android控件架构.md)
 * [Android屏幕尺寸](进阶/Android屏幕尺寸.md)
@@ -67,6 +58,14 @@
 * [Android动画机制与使用技巧](进阶/Android动画机制与使用技巧.md)
 * [Android绘图机制与处理技巧](进阶/Android绘图机制与处理技巧.md)
 * [Android性能优化](进阶/Android性能优化.md)
+
+## 机制
+
+* [Android Context详解](进阶/Android-Context详解.md)
+* [Android的IPC机制](进阶/Android的IPC机制.md)
+* [Android的IPC方式](进阶/Android的IPC方式.md)
+* [Android的消息机制](进阶/Android的消息机制.md)
+* [Android的线程和线程池](进阶/Android的线程和线程池.md)
 
 ## 样式
 
@@ -89,8 +88,8 @@
 
 * [Gradle从入门到实战①Groovy基础](gradle/Gradle从入门到实战①Groovy基础.md)
 
-
 # 6 源码
+
 
 ## 开源库
 
@@ -98,6 +97,10 @@
 * [EventBus3.0源码解析](源码/EventBus3.0源码解析.md)
 
 # 7 framework
+
+* [Mac编译Android7.1.2源码](framework/Mac编译Android7.1.2源码.md)
+* [Android系统架构与源码目录](framework/Android系统架构与源码目录.md)
+* [Android启动流程①init进程分析](framework/Android启动流程①init进程分析.md)
 
 # 8 代码示例
 
