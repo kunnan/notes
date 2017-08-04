@@ -2,6 +2,13 @@
 
 [TOC]
 
+* UI
+* NDK
+* 进阶
+* Gradle
+* 源码
+* framework
+
 # 1 实践
 
 ## UI
@@ -69,13 +76,14 @@
 * [Android样式4drawable](进阶/Android样式4drawable.md)
 * [Android样式5Style](进阶/Android样式5Style.md)
 
-# 4 扔物线Hencoder
+# 4 Hencoder
 
 [Hencoder http://hencoder.com/](http://hencoder.com/)
 
 * [自定义View1-1绘制基础](hencoder/自定义View1-1绘制基础.md)
 * [自定义View1-2Paint详解](hencoder/自定义View1-2Paint详解.md)
 * [自定义View1-3文字的绘制](hencoder/自定义View1-3文字的绘制.md)
+* [自定义View1-4Canvas对绘制的辅助范围裁切和几何变换](hencoder/自定义View1-4Canvas对绘制的辅助范围裁切和几何变换.md)
 
 # 5 Gradle
 

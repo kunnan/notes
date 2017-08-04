@@ -2,6 +2,8 @@
 
 [TOC]
 
+详细过程请看结尾处参考资料里的文章（第一篇非常详细）。
+
 # 编译Android源码
 
 本机的系统环境如下：
@@ -26,9 +28,11 @@ $ POSIXLY_CORRECT=1 sudo port install gmake libsdl git gnupg
 
 ## 下载源码
 
-* 安装Repo
-* 初始化repo仓库`$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.2_r1`
-* 同步源码到本地`repo sync`
+* 安装Repo `curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo`
+* 将`~/bin`目录添加到PATH路径
+* `chmod a+x ~/bin/repo`打开可执行权限
+* 在创建的源码目录初始化repo仓库`$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.2_r1`
+* 同步源码到本地`repo sync`，最好是在晚上下载
 
 
 ## 编译源码
@@ -47,6 +51,11 @@ make -j8
 //模拟器启动
 emulator
 ```
+
+## 花费时间
+
+* 下载源码时间大概10个小时左右
+* 编译源码时间大约2小时左右 8线程编译
 
 # 问题
 
@@ -115,7 +124,7 @@ chsh -s /bin/zsh
 启动Android Studio，然后选择打开一个已存在的Android Studio工程，选择源码根目录的android.ipr，经过漫长(我首次导入用了20分钟)的加载过程以后，Android 源码就已经成功的加载到了Android Studio中。
 
 
-# 参考文章
+# 参考资料
 
 * [macOS（Sierra 10.12）上Android源码（AOSP）的下载、编译与导入到Android Studio](http://blog.bihe0832.com/macOS-AOSP.html)
 
