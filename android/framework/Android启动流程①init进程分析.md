@@ -6,7 +6,7 @@
 # 简介
 
 当Linux内核启动之后，运行的第一个进程是init，这个进程是一个守护进程，它的生命周期贯穿整个linux 内核运行的始终， linux中所有其它的进程的共同始祖均为init进程。 
-Android系统是运作在linux内核上的，为了启动并运行整个android系统，google实现了android系统的init进程。s
+Android系统是运作在linux内核上的，为了启动并运行整个android系统，google实现了android系统的init进程。
 
 # init主函数
 
@@ -177,7 +177,8 @@ void property_init() {
 ```cpp
 void start_property_service() {
     //创建一个非阻塞的socket
-    property_set_fd = create_socket(PROP_SERVICE_NAME, SOCK_STREAM | SOCK_CLOEXEC | SOCK_NONBLOCK,
+    property_set_fd = create_socket(PROP_SERVICE_NAME, 
+    SOCK_STREAM | SOCK_CLOEXEC | SOCK_NONBLOCK,
                                     0666, 0, 0, NULL);
     if (property_set_fd == -1) {
         ERROR("start_property_service socket creation failed: %s\n", strerror(errno));
@@ -185,7 +186,8 @@ void start_property_service() {
     }
     //监听property_set_fd，使得该socket变成一个服务
     listen(property_set_fd, 8);
-    //将property_set_fd放入epoll句柄中，用epoll来监听property_set_fd，当有数据到来时，init进程将使用handle_property_set_fd函数进行处理
+    //将property_set_fd放入epoll句柄中，用epoll来监听property_set_fd，
+    //当有数据到来时，init进程将使用handle_property_set_fd函数进行处理
     register_epoll_handler(property_set_fd, handle_property_set_fd);
 }
 ```
@@ -350,7 +352,8 @@ import /init.${ro.zygote}.rc
 >system/core/rootdir/init.zygote64.rc
 
 ```cpp
-service zygote /system/bin/app_process64 -Xzygote /system/bin --zygote --start-system-server
+service zygote /system/bin/app_process64 -Xzygote 
+/system/bin --zygote --start-system-server
     class main //指的是zygote的class name为main
     socket zygote stream 660 root system
     onrestart write /sys/android_power/request_state wake
