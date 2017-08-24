@@ -389,3 +389,7 @@ EVENT_MOUSEMOVE
 ```
 ![](http://onke0yoit.bkt.clouddn.com/opencv_trackerbar.gif)
 
+# 参考资料
+
+* 《OpenCV3编程入门》
+
