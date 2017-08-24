@@ -1,10 +1,11 @@
 # 学习笔记
 
-* [Android学习](android/android.md)
-* [Java语言](java/java.md)
-* [Python语言](python/python.md)
-* [OpenCV学习](opencv/opencv.md)
-* [Go语言](go/go.md)
+* [Android](android/android.md)
+* [Java](java/java.md)
+* [Kotlin](kotlin/kotlin.md)
+* [Python3](python/python.md)
+* [OpenCV3](opencv/opencv.md)
+* [Go](go/go.md)
 * [计算机基础](theory/theory.md)
 
 
