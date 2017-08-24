@@ -83,6 +83,7 @@
 * [自定义View1-2Paint详解](hencoder/自定义View1-2Paint详解.md)
 * [自定义View1-3文字的绘制](hencoder/自定义View1-3文字的绘制.md)
 * [自定义View1-4Canvas对绘制的辅助范围裁切和几何变换](hencoder/自定义View1-4Canvas对绘制的辅助范围裁切和几何变换.md)
+* [自定义View1-5绘制顺序](hencoder/自定义View1-5绘制顺序.md)
 
 # 5 Gradle
 
