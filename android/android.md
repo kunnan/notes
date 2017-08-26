@@ -106,6 +106,7 @@
 * [Android系统架构与源码目录](framework/Android系统架构与源码目录.md)
 * [Android启动流程①init进程分析](framework/Android启动流程①init进程分析.md)
 * [Android启动流程②Zygote进程启动过程](framework/Android启动流程②Zygote进程启动过程.md)
+* [Android启动流程③SystemServer启动过程](framework/Android启动流程③SystemServer启动过程.md)
 
 # 8 代码示例
 
