@@ -31,10 +31,10 @@ void merge(InputArrayOfArrays mv, OutputArray dst);
 
 # 示例程序
 
-```cpp
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <vector>
+```c
+#include <opencv2/core/core.hpp>  
+#include <opencv2/highgui/highgui.hpp>  
+#include <vector>  
 
 using namespace cv;
 using namespace std;

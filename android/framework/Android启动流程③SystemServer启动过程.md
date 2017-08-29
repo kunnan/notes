@@ -10,7 +10,7 @@ ZygoteInit 在 main 函数中通过调用 startSystemServer 函数启动 SystemS
 
 frameworks/base/core/java/com/android/internal/os/ZygoteInit.java
 
-```Java
+```java
 private static boolean startSystemServer(String abiList, String socketName)
        throws MethodAndArgsCaller, RuntimeException {
 ···
