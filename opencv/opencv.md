@@ -2,7 +2,7 @@
 
 [TOC]
 
-## OpenCV3编程入门
+## OpenCV3编程入门学习笔记
 
 * [图像基本概念](tutorial/图像基本概念.md)
 * [OpenCV3编程入门3-1基础](tutorial/OpenCV3编程入门3-1基础.md)
@@ -16,6 +16,8 @@
 * [OpenCV3编程入门5-5图像颜色空间转换](tutorial/OpenCV3编程入门5-5图像颜色空间转换.md)
 * [OpenCV3编程入门5-6图像算术与逻辑操作](tutorial/OpenCV3编程入门5-6图像算术与逻辑操作.md)
 * [OpenCV3编程入门5-7离散傅里叶变换](tutorial/OpenCV3编程入门5-7离散傅里叶变换.md)
+* [OpenCV3编程入门6-1线性滤波](tutorial/OpenCV3编程入门6-1线性滤波.md)
+* [OpenCV3编程入门6-2非线性滤波](tutorial/OpenCV3编程入门6-2非线性滤波.md)
 
 # 代码示例
 
