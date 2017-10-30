@@ -1,5 +1,4 @@
 **Java8特性④Stream收集数据**
-
 [TOC]
 
 >收集器可以简洁而灵活地定义collect用来生成结果集合的标准。更具体地说，对流调用 collect 方法将对流中的元素触发一个归约操作（由Collector来参数化）。一般来说，Collector 会对元素应用一个转换函数（很多时候是不体现任何效果的恒等转换， 例如 toList ），并将结果累积在一个数据结构中，从而产生这一过程的最终输出。下面就来学习那些可以从Collectors 类提供的工厂方法（例如groupingBy）创建的收集器。
@@ -106,33 +105,27 @@ System.out.println(partitioningDish);
 
 下表展示 Collectors 类的静态工厂方法。
 
-| 工厂方法 | 返回类型 | 作用 |
-| --- | --- | --- |
-| toList | `List<T>` | 把流中所有项目收集到一个 List |
-| toSet | `Set<T>` | 把流中所有项目收集到一个 Set，删除重复项 |
-| toCollection | `Collection<T>` | 把流中所有项目收集到给定的供应源创建的集合`menuStream.collect(toCollection(), ArrayList::new)` |
-| counting | Long | 计算流中元素的个数 |
-| sumInt | Integer | 对流中项目的一个整数属性求和 |
-| averagingInt | Double | 计算流中项目 Integer 属性的平均值 |
-| summarizingInt | IntSummaryStatistics | 收集关于流中项目 Integer 属性的统计值，例如最大、最小、 总和与平均值 |
-| joining | String | 连接对流中每个项目调用 toString 方法所生成的字符串`collect(joining(", "))` |
-| maxBy | `Optional<T>` | 一个包裹了流中按照给定比较器选出的最大元素的 Optional， 或如果流为空则为 Optional.empty() |
-| minBy | `Optional<T>` | 一个包裹了流中按照给定比较器选出的最小元素的 Optional， 或如果流为空则为 Optional.empty() |
-| reducing | 归约操作产生的类型 | 从一个作为累加器的初始值开始，利用 BinaryOperator 与流 中的元素逐个结合，从而将流归约为单个值`累加int totalCalories = menuStream.collect(reducing(0, Dish::getCalories, Integer::sum));` |
-| collectingAndThen | 转换函数返回的类型 | 包裹另一个收集器，对其结果应用转换函数`int howManyDishes = menuStream.collect(collectingAndThen(toList(), List::size))` |
-| groupingBy | `Map<K, List<T>>` | 根据项目的一个属性的值对流中的项目作问组，并将属性值作 为结果 Map 的键 |
-| partitioningBy | `Map<Boolean,List<T>>` | 根据对流中每个项目应用谓词的结果来对项目进行分区 |
+| 工厂方法 | 返回类型 | 作用 
+| --- | --- | --- 
+| toList | `List<T>` | 把流中所有项目收集到一个 List 
+| toSet | `Set<T>` | 把流中所有项目收集到一个 Set，<br>删除重复项 
+| toCollection | `Collection<T>` | 把流中所有项目收集到给定的<br>供应源创建的集合<br>menuStream.collect(toCollection(), ArrayList::new)
+| counting | Long | 计算流中元素的个数 
+| sumInt | Integer | 对流中项目的一个整数属性求和 
+| averagingInt | Double | 计算流中项目 Integer 属性的平均值 
+| summarizingInt | IntSummaryStatistics | 收集关于流中项目 Integer 属性的统计值，<br>例如最大、最小、 总和与平均值 
+| joining | String | 连接对流中每个项目调用 toString<br>方法所生成的字符串`collect(joining(", "))` 
+| maxBy | `Optional<T>` | 一个包裹了流中按照给定比较器<br>选出的最大元素的 Optional,<br> 或如果流为空则为 Optional.empty() 
+| minBy | `Optional<T>` | 一个包裹了流中按照给定比较器<br>选出的最小元素的Optional，<br> 或如果流为空则为Optional.empty() 
+| reducing | 归约操作产生的类型 | 从一个作为累加器的初始值开始，<br>利用 BinaryOperator 与流中的元素逐个结合，<br>从而将流归约为单个值累加<br>int totalCalories = <br>menuStream.collect(reducing(0, Dish::getCalories, Integer::sum)); 
+| collectingAndThen | 转换函数返回的类型 | 包裹另一个收集器，<br>对其结果应用转换函数<br>int howManyDishes = menuStream.collect(<br>collectingAndThen(toList(), List::size))
+| groupingBy | `Map<K, List<T>>` | 根据项目的一个属性的值对流中的项目作问组，<br>并将属性值作为结果 Map 的键 
+| partitioningBy | `Map<Boolean,List<T>>` | 根据对流中每个项目应用谓词的结果<br>来对项目进行分区 
 
 
 # 附录：Dish类
 
 ```java
-package com.company.bean;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
 /**
  * Created by liuguoquan on 2017/4/26.
  */
