@@ -52,7 +52,7 @@
 
 ## SpringBoot
 
-* [1.SpringBoot入门篇](springboot/1.SpringBoot入门篇.md)
+* [1.SpringBoot入门篇](springboot/SpringBoot入门篇.md)
 * [2.SpringBoot之配置文件解析](springboot/2.SpringBoot之配置文件解析.md)
 * [3.SpringBoot之MySql配置](springboot/3.SpringBoot之MySql配置.md)
 * [4.SpringBoot之JdbcTemplate访问MySQL](springboot/4.SpringBoot之JdbcTemplate访问MySQL.md)
