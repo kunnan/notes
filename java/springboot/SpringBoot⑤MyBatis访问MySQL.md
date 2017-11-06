@@ -68,8 +68,8 @@ public class Student implements Serializable {
 在接口中通过注解定义 CRUD 语句。
 
 ```java
-@Mapper
-@Component
+@Mapper 
+@Component 
 public interface StudentMapper {
 
   @Select("SELECT * FROM STUDENT")
@@ -116,9 +116,9 @@ public interface StudentMapper {
 将创建的 Mapper 接口类路径添加到应用中。
 
 ```java
-@SpringBootApplication
-@MapperScan("com.liuguoquan.springboot.mapper")
-@EnableConfigurationProperties({ConfigBean.class, ConfigTestBean.class})
+@SpringBootApplication 
+@MapperScan("com.liuguoquan.springboot.mapper") 
+@EnableConfigurationProperties({ConfigBean.class, ConfigTestBean.class}) 
 public class SpringbootApplication {
 
   public static void main(String[] args) {
@@ -129,8 +129,8 @@ public class SpringbootApplication {
 **4. Controller使用 Mapper 接口提供服务**
 
 ```java
-@RequestMapping("api/mybaits")
-@RestController
+@RequestMapping("api/mybaits") 
+@RestController 
 public class MyBaitsController {
   @Autowired StudentMapper mStudentMapper;
 
