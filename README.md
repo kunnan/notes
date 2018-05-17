@@ -2,6 +2,7 @@
 
 * [Android](android/android.md)
 * [Java](java/java.md)
+* [C/C++](C/C++/C/C++.md)
 * [Kotlin](kotlin/kotlin.md)
 * [Python3](python/python.md)
 * [OpenCV3](opencv/opencv.md)
